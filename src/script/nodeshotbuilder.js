@@ -13,7 +13,10 @@
         scrollbar  : false,
         fullpage   : false
       },
-      apiUrl: 'http://api.nodeshot.it:8080/ajax/'
+
+      apiUrl: 'http://api.nodeshot.it:8080/',
+      ajaxUrl: 'http://api.nodeshot.it:8080/ajax/'
+
     }, conf);
 
     this.init();
@@ -159,7 +162,7 @@
     // Generate URL
     var url = new exports.URLGenerator({
       param: this.conf.options,
-      root: this.conf.apiUrl
+      root: this.conf.ajaxUrl
     }).generate();
 
     // Request
