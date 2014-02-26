@@ -1,0 +1,25 @@
+%logo-loaders{
+  width:64px;
+  height:64px;
+  margin:0 auto;
+}
+
+.logo-loaders--stroke{
+  @extend %logo-loaders;
+
+  .hexagon{
+    stroke:#38985A;
+    stroke-dasharray: 629;
+    stroke-linecap:round;
+    stroke-width: 20;
+    stroke-linejoin:round;
+    stroke-dashoffset: 120;
+    animation:rotating-stroke 4s ease-in-out infinite;
+  }
+}
+
+@keyframes rotating-stroke {
+  to{
+    stroke-dashoffset: 2637;
+  }
+}

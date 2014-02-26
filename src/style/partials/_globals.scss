@@ -1,0 +1,16 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+}

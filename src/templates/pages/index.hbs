@@ -1,0 +1,61 @@
+---
+title: Builder
+---
+<form class="nodeshot-builder">
+  <h1 class="nodeshot-builder__title"><img src="http://nodeshot.it/logo/nodeshot-small.png" alt="nodeshot logo" /></h1>
+  <p class="nodeshot-builder__group">
+    <label class="nodeshot-builder__label" for="nodeshot-builder__input--url">URL *</label>
+    <input class="nodeshot-builder__input  nodeshot-builder__input--url" id="nodeshot-builder__input--url" type="url" placeholder="http://google.com" />
+  </p>
+  <div class="nodeshot-builder__conditional">
+    <div class="nodeshot-builder__row">
+      <p class="nodeshot-builder__group">
+        <label class="nodeshot-builder__label" for="nodeshot-builder__input--width">Width <span class="nodeshot-builder__note">(px)</span></label>
+        <input class="nodeshot-builder__input  nodeshot-builder__input--width" id="nodeshot-builder__input--width" type="number" min="0"  />
+      </p>
+      <p class="nodeshot-builder__group">
+        <label class="nodeshot-builder__label" for="nodeshot-builder__input--height">Height <span class="nodeshot-builder__note">(px)</span></label>
+        <input class="nodeshot-builder__input  nodeshot-builder__input--height" id="nodeshot-builder__input--height" type="number" min="0" />
+      </p>
+    </div>
+    <div class="nodeshot-builder__row">
+      <p class="nodeshot-builder__group">
+        <label class="nodeshot-builder__label" for="nodeshot-builder__input--fullpage">Fullpage</label>
+        <input class="nodeshot-builder__input--fullpage" type="checkbox" id="nodeshot-builder__input--fullpage" /> <label for="nodeshot-builder__input--fullpage">Enable fullpage</label>
+      </p>
+
+      <p class="nodeshot-builder__group">
+        <label class="nodeshot-builder__label  nodeshot-builder__label--format">Format</label>
+        <input class="nodeshot-builder__input--format" type="radio" id="png" name="format" value="png"> <label for="#png">.png</label>
+        <input class="nodeshot-builder__input--format" type="radio" id="jpeg" name="format" value="jpeg"> <label for="#jpeg">.jpg</label>
+      </p>
+    </div>
+    <p class="nodeshot-builder__more-button">+ Advanced settings</p>
+    <div class="nodeshot-builder__advanced-options">
+      <div class="nodeshot-builder__row">
+        <p class="nodeshot-builder__group">
+          <label class="nodeshot-builder__label" for="nodeshot-builder__input--delay">Delay <span class="nodeshot-builder__note">(ms)</span></label>
+          <input class="nodeshot-builder__input  nodeshot-builder__input--delay" id="nodeshot-builder__input--delay" type="number" min="0" step="100" />
+        </p>
+        <p class="nodeshot-builder__group">
+          <label class="nodeshot-builder__label" for="nodeshot-builder__input--callback">Scrollbar</label>
+          <input class="nodeshot-builder__input--scrollbar" type="checkbox" id="nodeshot-builder__input--scrollbar" /> <label for="nodeshot-builder__input--scrollbar">Enable scrollbar</label>
+        </p>
+      </div>
+            <p class="nodeshot-builder__group" style="display: none">
+        <label class="nodeshot-builder__label" for="nodeshot-builder__input--callback">Callback URL</label>
+        <input class="nodeshot-builder__input  nodeshot-builder__input--callback" type="url" placeholder="http://www.myservice.com/screenshot/google" id="nodeshot-builder__input--callback" />
+      </p>
+    </div>
+
+    <button class="nodeshot-builder__submit">Generate screenshot!</button>
+    <svg class="nodeshot-builder__loader logo-loaders--stroke" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 792 1008"><path class="hexagon" fill="#4ABA74" d="M740.265,274.43L424.931,92.376c-16.172-9.341-37.102-9.341-53.28,0L56.324,274.43c-16.433,9.491-26.64,27.168-26.64,46.149v364.109c0,18.975,10.208,36.659,26.64,46.143l315.327,182.061c8.089,4.667,17.299,7.137,26.64,7.137s18.551-2.464,26.64-7.137l315.327-182.55c16.433-9.491,26.64-27.168,26.64-46.143V320.586C766.905,301.599,756.697,283.914,740.265,274.43z"></path><g class="cam"><path class="body" fill="#FFFFFF" d="M492.715,372.106c-0.007-0.007-0.007-0.013-0.007-0.02l-12.111-26.973c-3.435-7.652-11.042-12.574-19.424-12.574H337.932c-8.382,0-15.989,4.921-19.424,12.574l-12.111,26.973c-0.007,0.006-0.007,0.013-0.007,0.02h-23.179l-51.905-0.006h-23.642c-19.581,0-35.453,15.872-35.453,35.453V597.71c0,19.581,15.872,35.453,35.453,35.453h381.253c19.581,0,35.453-15.872,35.453-35.453v-190.15c0-19.581-15.872-35.453-35.453-35.453H492.715z M399.562,601.314c-54.421,0-98.686-44.272-98.686-98.686c0-54.414,44.265-98.68,98.686-98.68c54.408,0,98.673,44.272,98.68,98.68C498.242,557.049,453.977,601.314,399.562,601.314z"></path><path class="lens" fill="#FFFFFF" d="M399.562,435.177c-37.206,0-67.464,30.258-67.464,67.451c0,37.2,30.264,67.457,67.464,67.457c37.187,0,67.451-30.258,67.451-67.457C467.013,465.435,436.755,435.177,399.562,435.177z"></path></g></svg>    <img class="nodeshot-builder__screenshot" alt="Your result" />
+    <p class="nodeshot-builder__message"></p>
+
+  </div>
+</form>
+{{> scripts }}
+<script>
+  new NodeShotBuilder();
+</script>
+

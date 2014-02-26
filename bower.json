@@ -1,0 +1,22 @@
+{
+  "name": "nodeshot-website",
+  "version": "0.0.1",
+  "homepage": "https://github.com/FWeinb/nodeshot-website",
+  "authors": [
+    "Fabrice Weinberg <Fabrice@weinberg.me>"
+  ],
+  "description": "Website for nodeshot",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "normalize.css": "~3.0.0"
+  }
+}

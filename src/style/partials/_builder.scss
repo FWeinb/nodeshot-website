@@ -1,0 +1,147 @@
+.nodeshot-builder {
+  color: #333;
+  width: 30em;
+  background: #EFEFEF;
+  padding: 2em;
+  margin: 1em auto;
+  border-top: .5em solid $main-color;
+  box-shadow: 0 .75em .5em -.5em rgba(0,0,0,.15);
+}
+
+.nodeshot-builder__title {
+  margin-top: 0;
+  font-size: 1.8em;
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin: auto
+  }
+}
+
+.nodeshot-builder__row {
+  clear: both;
+  overflow: hidden;
+}
+
+.nodeshot-builder__group {
+  margin-bottom: 1.5em;
+  margin-top: 0;
+
+  .nodeshot-builder__row & {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+
+    + & {
+      margin-right: 0;
+      margin-left: 2%;
+    }
+  }
+}
+
+.nodeshot-builder__input {
+  width: 100%;
+  border: none;
+  border-left: .5em solid $main-color;
+  padding: .25em;
+}
+
+.nodeshot-builder__input--format + label {
+  margin-right: 1.5em;
+  position: relative;
+  top: -2px;
+  margin-left: .25em;
+}
+
+.nodeshot-builder__label {
+  margin-bottom: .5em;
+  display: block;
+  text-transform: uppercase;
+  font-size: .75em;
+}
+
+.nodeshot-builder__note {
+  color: #777;
+  font-size: .9em;
+}
+
+.nodeshot-builder__label--result {
+  font-weight: bold;
+  color: $main-color;
+}
+
+.nodeshot-builder__input--result {
+  background: lighten(silver, 10%);
+  color: darken(silver, 40%);
+  font: 1em/1.35 "Monaco", monospace;
+  cursor: pointer;
+}
+
+.nodeshot-builder__advanced-options {
+  display: none;
+}
+
+.nodeshot-builder__more-button {
+  cursor: pointer;
+  font-size: .9em;
+  color: #666;
+}
+
+.nodeshot-builder__conditional {
+  display: none;
+  overflow: hidden;
+}
+
+.nodeshot-builder__input--scrollbar,
+.nodeshot-builder__input--fullpage {
+  position: relative;
+  top: 2px;
+  margin-right: .25em;
+}
+
+.nodeshot-builder__screenshot {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  clear: both;
+
+  &:not([src]) {
+    display: none;
+  }
+}
+
+.nodeshot-builder__submit {
+  background: $main-color;
+  border: none;
+  color: white;
+  padding: .25em .5em;
+  transition: .15s;
+  float: right;
+  margin-bottom: 1em;
+
+  &:hover {
+    background: darken($main-color, 10%);
+  }
+}
+
+.nodeshot-builder__group--hidden {
+  display: none;
+}
+
+.nodeshot-builder__message {
+  color: red;
+  float: left;
+  margin-top: .25em;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.nodeshot-builder__loader {
+  clear: both;
+  display: none;
+  margin: 1em auto;
+}
