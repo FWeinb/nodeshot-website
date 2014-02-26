@@ -1,0 +1,6 @@
+*.yo-rc.json
+npm-debug.log
+node_modules
+.sass-cache
+src/vendor
+src

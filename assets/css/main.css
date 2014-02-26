@@ -1,0 +1,221 @@
+/* ------------- *
+ * $GOOGLE FONTS *
+ * ------------- */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format("woff");
+}
+/* line 1, ../../../src/style/partials/_globals.scss */
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../src/style/partials/_globals.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 9, ../../../src/style/partials/_globals.scss */
+body {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* line 13, ../../../src/style/partials/_globals.scss */
+a {
+  color: #38985a;
+  text-decoration: none;
+}
+
+/* line 1, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder {
+  color: #333;
+  width: 30em;
+  background: #EFEFEF;
+  padding: 2em;
+  margin: 1em auto;
+  border-top: 0.5em solid #38985a;
+  box-shadow: 0 0.75em 0.5em -0.5em rgba(0, 0, 0, 0.15);
+}
+
+/* line 11, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__title {
+  margin-top: 0;
+  font-size: 1.8em;
+}
+/* line 15, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__title img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* line 22, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__row {
+  clear: both;
+  overflow: hidden;
+}
+
+/* line 27, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__group {
+  margin-bottom: 1.5em;
+  margin-top: 0;
+}
+/* line 31, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__row .nodeshot-builder__group {
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+}
+/* line 36, ../../../src/style/partials/_builder.scss */
++ .nodeshot-builder__row .nodeshot-builder__group {
+  margin-right: 0;
+  margin-left: 2%;
+}
+
+/* line 43, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__input {
+  width: 100%;
+  border: none;
+  border-left: 0.5em solid #38985a;
+  padding: .25em;
+}
+
+/* line 50, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__input--format + label {
+  margin-right: 1.5em;
+  position: relative;
+  top: -2px;
+  margin-left: .25em;
+}
+
+/* line 57, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__label {
+  margin-bottom: .5em;
+  display: block;
+  text-transform: uppercase;
+  font-size: .75em;
+}
+
+/* line 64, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__note {
+  color: #777;
+  font-size: .9em;
+}
+
+/* line 69, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__label--result {
+  font-weight: bold;
+  color: #38985a;
+}
+
+/* line 74, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__input--result {
+  background: #dadada;
+  color: #5a5a5a;
+  font: 1em/1.35 "Monaco", monospace;
+  cursor: pointer;
+}
+
+/* line 81, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__advanced-options {
+  display: none;
+}
+
+/* line 85, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__more-button {
+  cursor: pointer;
+  font-size: .9em;
+  color: #666;
+}
+
+/* line 91, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__conditional {
+  display: none;
+  overflow: hidden;
+}
+
+/* line 96, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__input--scrollbar,
+.nodeshot-builder__input--fullpage {
+  position: relative;
+  top: 2px;
+  margin-right: .25em;
+}
+
+/* line 103, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__screenshot {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  clear: both;
+}
+/* line 110, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__screenshot:not([src]) {
+  display: none;
+}
+
+/* line 115, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__submit {
+  background: #38985a;
+  border: none;
+  color: white;
+  padding: .25em .5em;
+  transition: .15s;
+  float: right;
+  margin-bottom: 1em;
+}
+/* line 124, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__submit:hover {
+  background: #2a7344;
+}
+
+/* line 129, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__group--hidden {
+  display: none;
+}
+
+/* line 133, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__message {
+  color: red;
+  float: left;
+  margin-top: .25em;
+}
+/* line 138, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__message:empty {
+  display: none;
+}
+
+/* line 143, ../../../src/style/partials/_builder.scss */
+.nodeshot-builder__loader {
+  clear: both;
+  display: none;
+  margin: 1em auto;
+}
+
+/* line 1, ../../../src/style/partials/_logo-loaders.scss */
+.logo-loaders--stroke {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+/* line 10, ../../../src/style/partials/_logo-loaders.scss */
+.logo-loaders--stroke .hexagon {
+  stroke: #38985A;
+  stroke-dasharray: 629;
+  stroke-linecap: round;
+  stroke-width: 20;
+  stroke-linejoin: round;
+  stroke-dashoffset: 120;
+  animation: rotating-stroke 4s ease-in-out infinite;
+}
+
+@keyframes rotating-stroke {
+  /* line 22, ../../../src/style/partials/_logo-loaders.scss */
+  to {
+    stroke-dashoffset: 2637;
+  }
+}
