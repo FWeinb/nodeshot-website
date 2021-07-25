@@ -5,5 +5,5 @@
 
 # Thanks to
 
-[Hugo Giraudel](https://twitter.com/HugoGiraudel) for creating the nodeshot builder.
+[Kitty Giraudel](https://twitter.com/KittyGiraudel) for creating the nodeshot builder.
 [Joshua Hibbert](https://twitter.com/_joshnh) for creating the logo.
